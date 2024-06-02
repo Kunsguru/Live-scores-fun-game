@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Results</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    #home, #away, #draw {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .home-color { color: green; }
+     .draw-color { color: blue; }
+      .away-color { color: red; }
+</style>
+</head>
+<body>
+<div id="home">Home: <span id="homeResult" class="home-color">0</span></div> <div></div>
+
+<div id="draw">Draw: <span id="drawResult" class="draw-color">0</span></div><div></div>
+
+<div id="away">Away: <span id="awayResult" class="away-color">0</span></div><div></div>
+<script>
+    // Simulating live updates
+    setInterval(function() {
+        // Generate random numbers for home, away, and draw
+        var homeScore = Math.floor(Math.random() * 5);
+        
+        var drawScore = Math.floor(Math.random() * 5);
+        
+        var awayScore = Math.floor(Math.random() * 5);
+        
+        // Update the displayed results
+        document.getElementById('homeResult').innerText = homeScore;
+        
+        document.getElementById('drawResult').innerText = drawScore;
+        
+        document.getElementById('awayResult').innerText = awayScore;
+    }, 20000); // Update every 2 seconds
+</script>
+</body>
+</html>
