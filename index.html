@@ -4,25 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Live Results</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-    }
-    #home, #away, #draw {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    .home-color { color: green; }
-     .draw-color { color: blue; }
-      .away-color { color: red; }
-</style>
+<link rel=“stylesheet” href=“styles.css”>
 </head>
 <body>
 <div id="home">Home: <span id="homeResult" class="home-color">0</span></div> <div></div>
@@ -47,6 +29,6 @@
         
         document.getElementById('awayResult').innerText = awayScore;
     }, 20000); // Update every 2 seconds
-</script>
+<script src=“script.js”></script>
 </body>
 </html>
