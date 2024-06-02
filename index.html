@@ -12,23 +12,8 @@
 <div id="draw">Draw: <span id="drawResult" class="draw-color">0</span></div><div></div>
 
 <div id="away">Away: <span id="awayResult" class="away-color">0</span></div><div></div>
-<script>
-    // Simulating live updates
-    setInterval(function() {
-        // Generate random numbers for home, away, and draw
-        var homeScore = Math.floor(Math.random() * 5);
-        
-        var drawScore = Math.floor(Math.random() * 5);
-        
-        var awayScore = Math.floor(Math.random() * 5);
-        
-        // Update the displayed results
-        document.getElementById('homeResult').innerText = homeScore;
-        
-        document.getElementById('drawResult').innerText = drawScore;
-        
-        document.getElementById('awayResult').innerText = awayScore;
-    }, 20000); // Update every 2 seconds
+
+    
 <script src=“script.js”></script>
 </body>
 </html>
