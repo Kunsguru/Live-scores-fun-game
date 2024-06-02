@@ -1,1 +1,23 @@
-
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    #home, #away, #draw {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .home-color { 
+      color: green; 
+    }
+     .draw-color { 
+       color: blue; 
+     }
+      .away-color {
+        color: red; 
+      }
